@@ -1,4 +1,4 @@
-// NAVIGATIONBAR
+// --------------NAVIGATIONBAR--------------
 
 .header {
   overflow: hidden;
@@ -11,7 +11,8 @@
     background-color: #D9F0D0;
     border: none;
     color: #68C242;
-    padding: 15px 32px;
+    margin: 0;
+    padding: 10px 32px;
     text-align: center;
     letter-spacing: 0px;
     line-height: 18px;
@@ -23,7 +24,7 @@
 
 .header a {
   float: left;
-  color: #001D5D
+  color: #001D5D;
   font-family: karla;
   text-align: center;
   padding: 40px;
@@ -40,7 +41,9 @@
 }
 
 
-// MAINHEROIMAGE-STYLING
+// ---------------MAINHEROIMAGE-STYLING-------------
+
+
 body, .hero-content, .form h4, .footer
 {
   height: 100%
@@ -54,7 +57,7 @@ body, .hero-content, .form h4, .footer
 .article_image_homepage5
 {
   width: 100%;
-  height: 500px;
+  height: 600px;
   border-radius: 2px 2px 2px 2px;
   position: relative;
   display: block;
@@ -89,17 +92,18 @@ body, .hero-content, .form h4, .footer
   width: 40%;
 
 }
-//HERO&CONTENT SECTION
+//----------HERO&CONTENT SECTION-------------------
 
 .column img
 {
   float: left;
-  padding: 0 20px 20px 0;
-  width: 40%
+  
 }
 .column
 {
   overflow: auto;
+  padding: 80px 20px 80px 20px;
+
 }
 
 .column p
@@ -108,37 +112,137 @@ body, .hero-content, .form h4, .footer
   margin-top: 5px;
 
 }
+p img
+{
+  width: 80%;
+  padding-left:50px;
+  padding-right: 5px;
+}
 
 .column p.image-content
 {
   margin-top: 5px;
-  margin-left: 10px;
+  margin-left:2px;
+}
+
+.image-content
+{
+  float: left;
+  width: 40%;
+  padding-left:0;
+  height: 80%;
 }
 
 .image-content h1
 {
+  margin: 0;
   font-family: karla;
   font-weight: bold;
-  font-size: 30px;
-  letter-spacing: 0px;
-  line-height: 40px;
+  color: #001D5D;
+  font-size: 40px;
+  letter-spacing: 50;
+  
 }
 
-// NEWREALEASES_SECTION
-.newrelease
-{
-  text-align: center;
+.image-content h4{
+  font-weight: normal;
+  padding: 20px 20px 20px 0px;
+  
 }
 
-.newrelease p
+// ------------NEWREALEASES_SECTION----------------
+.wrapper{
+  width:100%;
+  padding-top: 2px;
+  text-align:center;
+}
+
+.wrapper h2
 {
+  font-weight: bold;
+  color: #001D5D;
+  padding-top: 40px;
+  padding-bottom: 0px;
   text-align: center;
-  padding-left: 250px;
-  padding-right: 250px;
+  font-size: 40px;
+}
+.wrapper p
+{
+  padding-top: 0px;
   color: black;
+  text-align: center;
 }
 
-// FORM_IMAGE_SECTION
+.carousel{
+  width:130%;
+  margin:0px auto;
+}
+.slick-slide{
+  margin:15px;
+  background-color: #FFFFFF;
+  height: 250px;
+  border: 1px solid #F6F6F6;
+  
+}
+.slick-slide h1{
+  width:100%;
+  height: 200px;
+  border: 2px solid #fff;
+}
+.slick-slide card{
+  width:100%;
+  height: 300px;
+  border: 2px solid #fff;
+  margin: 5px;
+}
+
+.card img
+{
+  float: left; 
+  height: 130px; 
+  width:25%;
+  margin:50px 20px 50px 20px;
+
+}
+.card-content 
+{
+  text-align: left;
+  margin:35px;
+  color: black;
+  padding-left: 10px;
+  line-height:15px;
+}
+
+.card-content h3
+{
+color:#001D5D;
+font-size: 30px;
+line-height: 40px;
+padding-bottom: -1px;
+
+}
+
+.card-content h4
+{
+color: #68C242;
+padding-top:.1px;
+margin-top: 0
+font-size: 16px;
+letter-spacing: 1;
+}
+
+.slide-button-column img
+{
+  float: left;
+  padding: 10px 70px 10px 70px;
+
+}
+
+.slide-button-row
+{
+
+}
+//---------------FORM_IMAGE_SECTION-------------
 * 
 {
     box-sizing: border-box;
@@ -163,10 +267,11 @@ float: right;
 
 input[type=text]{
     width: 40%;
-    background-color: #F6F6F6;
+    background-color:#F6F6F6;
     padding: 12px 20px;
+    border: none;
     margin-right: 30px;
-    margin: 10px 20px 30px 20px;
+    margin: 10px 20px 30px 40px;
     box-sizing: border-box;
 }
 
@@ -175,13 +280,12 @@ textarea {
     height: 150px;
     background-color: #F6F6F6;
     padding: 12px 20px;
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 20px 40px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
-    background-color: #f8f8f8;
     resize: none;
-
+    border: none;
     font-family: karla;
     font-weight: regular;
     font-size: 16px;
@@ -192,13 +296,11 @@ textarea {
  {
     width: 40%;
     padding: 12px 20px;
-  //  margin-right: 30px;
+    border: none;
     background-color: #F6F6F6;
-    margin: 10px 20px 20px 20px;
+    margin: 10px 20px 20px 40px;
     box-sizing: border-box;
     height: 40px;
-    background-color: white;
-
     font-family: karla;
     font-weight: regular;
     font-size: 16px;
@@ -212,13 +314,13 @@ textarea {
 .form
 {
     overflow: auto;
-    background-color: #F6F6F6;
+    height: 600px;
 }
 
 .form img
 {
     float: right; 
-    height: 500px; 
+    height: 600px; 
     width: 40%; 
     margin-left: 15px
 }
@@ -229,12 +331,20 @@ color: #001D5D;
 font-family: karla;
 font-weight: bold;
  font-size: 30px;
+ margin-left: 40px;
     letter-spacing: 0px;
     line-height: 40px;
 }
+.form h4
+{
+  margin-left: 40px;
+}
 
-
-
+.formbutton
+{
+  margin-left: 40px;
+  margin-top: 20px;
+}
 
 
 // -------FOOTER-------
