@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  ZOOM IN & ZOOM OUT OF AN IMAGE
+</head>
+  <style>
+    
+
+
+/* The hero image */
+.hero-image {
+    
+    background-image:url("image1.png");
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 0; 
+    transition: transform .2s;
+}
+
+
+.hero-text {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding-left: 40px;
+    font-family: karla;
+    color: #FFFFFF;
+
+}
+.hero-text h1
+{
+  font-weight: bold;
+  font-size: 65px;
+  letter-spacing: 0.73px;
+  line-height:76px;
+}
+
+
+
+/*Hero image zoom */
+.hero-image {
+    -webkit-animation: zoom 10s infinite;
+    animation: zoom 10s infinite;
+    background: url("image1.png") center center fixed no-repeat;
+}
+
+
+
+@-webkit-keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 125%;
+    }
+}
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 125%;
+    }
+}
+
+
+
+
+
+
+  </style>
+<body>
+
+  <div class="hero-image">
+            <div class="hero-text">
+                <h1>A.M. Paradox</h1>
+                <p>Christopher Brent Wood, better known by his stage name Brent Faiyaz,
+                    is<br> an American singer and record producer. He released his debut project,
+                    an<br> extended play entitled A.M. Paradox, in 2016</p>
+                <div class="video">
+                 <img src="images/Play_button.png">Watch Video</div>
+            </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="header-wrapper">
+  <div class="zoominheader">
+    <div class="zoomoutheader">
+      <img class="article_image_homepage5" src="image3.png">
+
+  <div class="hero-name">A.M. Paradox</div>
+  <div class="hero-content">Christopher Brent Wood better known by his stage name Brent Faiyaz is an American singer and record producer. He relaesed his debut project an extended play entitled A.M. paradox in 2015.
+  <div class="video">
+    <img src="images/Play_button.png">Watch Video</div>
+  </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="hero-image">
+  <img class="article_image_homepage5" src="image3.png">
+
+  <div class="hero-name">A.M. Paradox</div>
+  <div class="hero-content">Christopher Brent Wood better known by his stage name Brent Faiyaz is an American singer and record producer. He relaesed his debut project an extended play entitled A.M. paradox in 2015.
+  <div class="video">
+    <img src="images/Play_button.png">Watch Video</div>
+  </div>
+</div> -->
+
+
