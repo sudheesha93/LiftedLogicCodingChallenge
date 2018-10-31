@@ -6,6 +6,9 @@
   background-color: white;
   padding: 1px 1px;
   height:10px;
+  position: sticky;
+  position:  -webkit-sticky;
+  top:0;
 }
 .header-right a button, #button, .formbutton{
     background-color: #D9F0D0;
@@ -90,14 +93,18 @@ body, .hero-content, .form h4, .footer
   left: 30%;
   transform: translate(-50%, -50%);
   width: 40%;
-
 }
+
+
+
+
+
+
 //----------HERO&CONTENT SECTION-------------------
 
 .column img
 {
   float: left;
-  
 }
 .column
 {
@@ -227,8 +234,8 @@ padding-bottom: -1px;
 color: #68C242;
 padding-top:.1px;
 margin-top: 0
-font-size: 16px;
-letter-spacing: 1;
+font-size:16px;
+letter-spacing:1;
 }
 
 .slide-button-column img
@@ -360,17 +367,19 @@ html
 
 hr
 {
-  display:  grid;
-  color: white;
-  border-width: 3px;
-  line-height: 10px:;
+  display: block;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
 }
 
 .footer
 {
   background-color: #001D5D;
   box-sizing: border-box;
-  height: 500px;
+  height: 200px;
 }
 .footercolumn {
   background-color: #001D5D;
@@ -378,7 +387,7 @@ hr
     width: 16.6%;
     padding: 10px;
     color: #FFFFFF;
-    height: 400px;
+    height: 300px;
 }
 .footercolumn h4
 {
