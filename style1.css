@@ -57,7 +57,7 @@ body, .hero-content, .form h4, .footer
   line-height: 25;
   color: #FFFFFF;
 }
-.article_image_homepage5
+.image_homepage
 {
   width: 100%;
   height: 600px;
@@ -68,6 +68,38 @@ body, .hero-content, .form h4, .footer
   margin-right: auto;
   margin-top: 5px;
   z-index: 0; 
+}
+.image_homepage {
+  -webkit-animation: zoom 10s infinite;
+    animation: zoom 10s infinite;
+    background: url("images/image1.png") center center fixed no-repeat;
+
+}
+  
+
+
+@-webkit-keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 125%;
+    }
+}
+
+@keyframes zoom {
+
+    0%,
+    100% {
+        background-size: 100%;
+    }
+
+    50% {
+        background-size: 125%;
+    }
 }
 
 .hero-name{

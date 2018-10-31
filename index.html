@@ -6,7 +6,32 @@
   <link rel="stylesheet" type="text/css" href="style1.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css"/>
+
+<script type="text/javascript">
+
+
+	function checkInfo()
+{
+
+	var fname=document.getElementById('fname').value;
+	var lname=document.getElementById('lname').value;
+	var email=document.getElementById('email').value;
+	var contactreason=document.getElementById('contactreason').value;
+	var msg=document.getElementById('msg').value;
+
+	if(fname=="" || lname=="" || email=="" || contactreason=="" || msg=="")
+	{
+		alert('Please fill in all the fields');
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+</script>
 </head>
+
 <body>
   <!-------------- NAVIGATION BAR-------------->
 <div class="header">
@@ -23,7 +48,7 @@
 
 <!-------------- HERO IMAGE-------------->
 <div class="hero-image">
-  <img class="article_image_homepage5" src="images/image1.png">
+  <img class="image_homepage" src="images/image1.png">
 
   <div class="hero-name">A.M. Paradox</div>
   <div class="hero-content">Christopher Brent Wood better known by his stage name Brent Faiyaz is an American singer and record producer. He relaesed his debut project an extended play entitled A.M. paradox in 2015.<br>
@@ -152,7 +177,7 @@
     <div class="row1">
      <div class="col-75">
       <div class="container">
-        <form action="/action_page.php">
+        <form action="submit.html" method="post" onsubmit="return checkInfo()">
 
             <div class="col-50">
             <input type="text" id="fname" name="fname" placeholder="First Name">
@@ -161,17 +186,17 @@
 
             <div class="col-50">
              <input type="text" id="email" name="email" placeholder="Enter Email adress">
-            <select name="reason">
+            <select name="reason" id="contactreason">
                 <option value="">Reason for Contacting</option>
                 <option value="personal">PERSONAL</option>
                 <option value="official">OFFICIAL</option>
             </select>
             </div>
 
-            <textarea name="message" rows="10" cols="30">Write a brief message</textarea>
+            <textarea name="message" rows="10" cols="30" id="msg" placeholder="Write a brief message"></textarea>
             <br>
             <div class="formbutton"
-            <button type="button" > Send Message</button>
+            <button type="submit" onclick="checkInfo()"> Send Message</button>
             </div>
         </form>
     </div>
